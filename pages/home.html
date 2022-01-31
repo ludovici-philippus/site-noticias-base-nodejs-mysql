@@ -1,0 +1,14 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h2>Olá, mundo!</h2>
+		<ul>
+			<% console.log(noticias); %>
+			<% for(let i=0; i<noticias.length; i++){ %>
+			<li><%= noticias[i].nome; %> - <a href="/<%= noticias[i].slug;%>">Ver mais!</a></li>	
+			<% }%>
+		</ul>
+	</body>
+</html>
